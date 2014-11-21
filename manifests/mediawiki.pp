@@ -14,10 +14,8 @@ class webserver::mediawiki (
 
   file { $settingsfile:
     ensure => file,
-    content => template('mediawiki/LocalSettings.erb'),
+    content => template('webserver/mediawiki/LocalSettings.erb'),
   }
-
-  class { webserver: }
 
   vcsrepo { "/var/www/html/mediawiki":
     ensure   => present,
