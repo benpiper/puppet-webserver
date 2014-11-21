@@ -2,7 +2,7 @@ class webserver::lamp (
   $rootpw = 'training',
 ) {
 
-  class { 'webserver': }
+  class { 'webserver::apache': }
 
   class { '::mysql::server':
     root_password    => $rootpw,

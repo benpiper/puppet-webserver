@@ -24,5 +24,10 @@ class webserver::mediawiki (
     revision => '1.23.6',
   }
 
+  firewall { '100 allow http access':
+    port   => [80],
+    proto  => tcp,
+    action => accept,
+  }
 
 }
