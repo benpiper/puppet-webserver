@@ -1,0 +1,14 @@
+{
+  "name": "benpiper-webserver",
+  "version": "0.1.0",
+  "author": "benpiper",
+  "summary": "Module for webserver role",
+  "license": "Apache 2.0",
+  "source": "http://www.github.com/benpiper/puppet-webserver",
+  "issues_url": "https://www.github.com/benpiper/puppet-webserver/issues",
+  "project_page": "https://www.github.com/benpiper/puppet-webserver",
+  "dependencies": [
+    {"version_requirement":">= 1.0.0","name":"puppetlabs-stdlib"}
+  ]
+}
+
